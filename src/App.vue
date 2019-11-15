@@ -28,6 +28,7 @@
 <script>
 import Vue from 'vue'
 import { Tabbar, TabbarItem } from 'vant'
+import Normalize from 'normalize.css'
 
 Vue.use(Tabbar).use(TabbarItem)
 
@@ -37,7 +38,21 @@ export default {
     return {
       active: 0
     }
+  },
+  components: {
+    Normalize
   }
 }
 </script>
-<style></style>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+</style>
